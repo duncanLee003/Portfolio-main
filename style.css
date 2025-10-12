@@ -4,18 +4,23 @@
 }
 /* sets the default*/
 
-h1{ font-family: 'Trebuchet MS'; } /* fonts for h1 and div*/
+h1{ font-family: 'Trebuchet MS'; } 
 div{ font-family: 'Trebuchet MS';}
+p{ font-family: 'Trebuchet Ms';}
 
-body{
-    background-image: linear-gradient(to bottom, rgb(104, 73, 243) 0%, rgb(104, 73, 243) 25%, white 25%, white 60%,  rgb(104, 73, 243) 60%, rgb(104, 73, 243) 300%);
-    /*background colours, % is how much it covers from direction*/
-    min-height: 300vh; /*so theres no stripes*/
+.homeindex{
+    background-image: linear-gradient(to bottom, rgb(223, 204, 186) 0px, rgb(223, 204, 186) 700px, rgb(245, 237, 229) 700px, rgb(245, 237, 229) 1920px, rgb(223, 204, 186) 1920px, rgb(223, 204, 186) 3000px );
+    /*background colours */
+    min-height: 320vh; /*set how much the page expands */
+
 }
+
+
+
 
 .navbar{ /* main navigation top bar */
     overflow:hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(223, 204, 186);
     padding: 10px 13px;
     position: fixed; /*remains on screen despite scrolling*/
     top: 0; /* at the top */
@@ -26,7 +31,7 @@ body{
 .navbar a { /* words inside the navbar*/
   float: left;
   display: block;
-  color: rgb(104, 73, 243);
+  color: rgb(65, 65, 65);
   text-align: center;
   padding: 10px 13px;
   text-decoration: none;
@@ -34,28 +39,41 @@ body{
   margin-left: 40px;
 }
 
+.navbar a:hover { /* changes colour when hovering cursor*/
+    color: rgb(236, 85, 26);
+    /* to add box colurs: background-color: rgb(236, 85, 26);*/    
+}
+
+.navbar a.active { 
+    color: rgb(236, 85, 26);
+}
 
 .heading {
-    font-size: 90px;
-    color: white;
-    margin-top: 450px;
-    margin-left:90px;
+    font-size: 70px;
+    color: rgb(65, 65, 65);
+    position: absolute;
+    left: 100px;
+    top: 450px;
 }
 
 .line{
     width: 80%;
     height: 5px; /* thickness of line */
     border: 0 none;
-    margin-left: 80px;
-    margin-top: 20px;
-    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 90px;
+    top: 540px;
+    background-color: rgb(236, 85, 26);
 }
 
+
+
 .summary {
-    font-size: 45px;
-    color: rgb(255, 255, 255);
-    margin-top: 20px;
-    margin-left:140px;
+    font-size: 35px;
+    color: rgb(65, 65, 65);
+    position: absolute;
+    left: 100px;
+    top: 560px;
 }
 
 
@@ -63,10 +81,10 @@ body{
 .boxtl {
     height:300px;
     width:500px;
-    background:rgb(161, 178, 252);
+    background:rgb(223, 204, 186);
     position: absolute;
-    left: 100px;
-    top: 920px;
+    left: 700px;
+    top: 1000px;
 
 }
 
@@ -74,132 +92,166 @@ body{
 .boxbl {
     height:300px;
     width:500px;
-    background:rgb(161, 178, 252);
+    background:rgb(223, 204, 186);
     position: absolute;
-    left: 100px;
-    top: 1320px;
+    left: 700px;
+    top: 1450px;
 
 }
 
 .boxtr {
     height:300px;
     width:500px;
-    background:rgb(161, 178, 252);
+    background:rgb(223, 204, 186);
     position: absolute;
-    left: 700px;
-    top: 920px;
+    left: 1300px;
+    top: 1000px;
 
 }
 
 .boxbr {
     height:300px;
     width:500px;
-    background:rgb(161, 178, 252);
-    position: absolute;
-    left: 700px;
-    top: 1320px;
-
-}
-
-.mainbox {
-    height:700px;
-    width:500px;
-    background:rgb(161, 178, 252);
+    background:rgb(223, 204, 186);
     position: absolute;
     left: 1300px;
-    top: 920px;
+    top: 1450px;
+
 }
+
 
 .titletl {
     font-size: 30px;
     position:absolute;
-    color: rgb(104, 73, 243);
-    left: 90px;
-    top: 1250px;
+    color: rgb(65, 65, 65);
+    left: 700px;
+    top: 1320px;
 }
 
 .titlebl {
     font-size: 30px;
     position:absolute;
-    color: rgb(104, 73, 243);
-    left: 90px;
-    top: 1650px;
+    color: rgb(65, 65, 65);
+    left: 700px;
+    top: 1770px;
 }
 
 .titletr {
     font-size: 30px;
     position:absolute;
-    color: rgb(104, 73, 243);
-    left: 690px;
-    top: 1250px;
+    color: rgb(65, 65, 65);
+    left: 1300px;
+    top: 1320px;
 }
 
 .titlebr {
     font-size: 30px;
     position:absolute;
-    color: rgb(104, 73, 243);
-    left: 690px;
-    top: 1650px;
+    color: rgb(65, 65, 65);
+    left: 1300px;
+    top: 1770px;
 }
 
 .titlemain {
     font-size: 30px;
     position:absolute;
-    color: rgb(104, 73, 243);
-    left: 1290px;
-    top: 1650px;
+    color: rgb(65, 65, 65);
+    left: 100px;
+    top: 1050px;
 }
 
 
 .whitebox {
     height:500px;
     width:800px;
-    background:rgb(255, 255, 255);
+    background:rgb(245, 237, 229);
     position: absolute;
     left:100px;
-    top:2200px;
-    z-index: -1;
+    top:2000px;
+    z-index: -1; /*puts layer behind others*/
 }
 
 .whitebox2 {
     height:500px;
     width:800px;
-    background:rgb(255, 255, 255);
+    background:rgb(245, 237, 229);
     position: absolute;
     right:100px;
-    top:2200px;
+    top:2000px;
     z-index: -1;
 }
 
 .whitetitle {
     font-size: 50px;
     position:absolute;
-    color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
     left: 100px;
-    top: 2710px;
+    top: 2520px;
 }
 
 .whitetitle2 {
     font-size: 50px;
     position:absolute;
-    color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
     left: 1010px;
-    top: 2710px;
+    top: 2520px;
 }
 
 .desc {
     font-size: 30px;
     position:absolute;
-    color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
     left: 100px;
-    top: 2800px;
+    top: 2600px;
 }
 
 .desc2 {
     font-size: 30px;
     position:absolute;
-    color: rgb(255, 255, 255);
+    color: rgb(65, 65, 65);
     left: 1010px;
-    top: 2800px;
+    top: 2600px;
 }
 
+.gallerypage{
+    background-color: rgb(223, 204, 186);
+    min-height: 320vh; 
+
+}
+.aboutmepage{
+    background-color: rgb(223, 204, 186);
+    min-height: 150vh; 
+
+}
+
+.headingabouteme {
+    font-size: 70px;
+    color: rgb(65, 65, 65);
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+
+.contactpage{
+    background-color: rgb(223, 204, 186);
+    min-height: 100vh; 
+
+}
+
+.headingcontact {
+    font-size: 70px;
+    color: rgb(65, 65, 65);
+    position: absolute;
+    left: 200px;
+    top: 150px;
+}
+
+.contactdetails{
+    font-size: 23px;
+    color: rgb(65, 65, 65);
+    position: absolute;
+    left: 210px;
+    top: 300px;
+    line-height: 3; /* sapcing between lines */
+}
