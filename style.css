@@ -76,6 +76,56 @@ p{ font-family: 'Trebuchet Ms';}
     top: 560px;
 }
 
+.birdscreen{
+    position:absolute;
+    right: 500px;
+    top: 55px;
+
+    animation: fadeIn 0.5s;
+    animation-name: fadingin;
+   
+}
+.hand{
+    position:absolute;
+    right:150px;
+    top:250px;
+    animation: fadeIn 0.5s;
+    animation-name: fadingin2;
+}
+
+.shapes1{
+    position:absolute;
+    right:600px;
+    top:570px;
+}
+
+.redsquare{
+    position:absolute;
+    right:150px;
+    top:170px;
+}
+
+.cloud{
+    position:absolute;
+    right:100px;
+    top:100px;
+    animation: fadeIn 0.5s;
+    animation-name: fadingin2; /* set animation variable */
+}
+
+
+/*animations*/
+@keyframes fadingin{
+    0% { opacity: 0; right:400px;}
+    100% { opacity: 1; }
+
+}
+@keyframes fadingin2{
+    0% { opacity: 0; right:110px;}
+    100% { opacity: 1; }
+
+}
+
 
 
 .boxtl {
@@ -256,51 +306,3 @@ p{ font-family: 'Trebuchet Ms';}
     line-height: 3; /* sapcing between lines */
 }
 
-.birdscreen{
-    position:absolute;
-    right: 500px;
-    top: 55px;
-
-    animation: fadeIn 0.5s;
-    animation-name: fadingin;
-   
-}
-.hand{
-    position:absolute;
-    right:150px;
-    top:250px;
-    animation: fadeIn 0.5s;
-    animation-name: fadingin2;
-}
-
-.shapes1{
-    position:absolute;
-    right:600px;
-    top:570px;
-}
-
-.redsquare{
-    position:absolute;
-    right:150px;
-    top:170px;
-}
-
-.cloud{
-    position:absolute;
-    right:100px;
-    top:100px;
-    animation: fadeIn 0.5s;
-    animation-name: fadingin2;
-}
-
-
-@keyframes fadingin{
-    0% { opacity: 0; right:400px;}
-    100% { opacity: 1; }
-
-}
-@keyframes fadingin2{
-    0% { opacity: 0; right:110px;}
-    100% { opacity: 1; }
-
-}
