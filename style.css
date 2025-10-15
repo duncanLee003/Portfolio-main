@@ -40,12 +40,12 @@ p{ font-family: 'Trebuchet Ms';}
 }
 
 .navbar a:hover { /* changes colour when hovering cursor*/
-    color: rgb(236, 85, 26);
+    color: rgb(255, 63, 45);
     /* to add box colurs: background-color: rgb(236, 85, 26);*/    
 }
 
 .navbar a.active { 
-    color: rgb(236, 85, 26);
+    color: rgb(255, 63, 45);
 }
 
 .heading {
@@ -63,7 +63,7 @@ p{ font-family: 'Trebuchet Ms';}
     position: absolute;
     left: 90px;
     top: 540px;
-    background-color: rgb(236, 85, 26);
+    background-color: rgb(255, 63, 45);
 }
 
 
@@ -74,6 +74,56 @@ p{ font-family: 'Trebuchet Ms';}
     position: absolute;
     left: 100px;
     top: 560px;
+}
+
+.birdscreen{
+    position:absolute;
+    right: 500px;
+    top: 55px;
+
+    animation: fadeIn 0.5s;
+    animation-name: fadingin;
+   
+}
+.hand{
+    position:absolute;
+    right:150px;
+    top:250px;
+    animation: fadeIn 0.5s;
+    animation-name: fadingin2;
+}
+
+.shapes1{
+    position:absolute;
+    right:600px;
+    top:570px;
+}
+
+.redsquare{
+    position:absolute;
+    right:150px;
+    top:170px;
+}
+
+.cloud{
+    position:absolute;
+    right:100px;
+    top:100px;
+    animation: fadeIn 0.5s;
+    animation-name: fadingin2; /* set animation variable */
+}
+
+
+/*animations*/
+@keyframes fadingin{
+    0% { opacity: 0; right:400px;}
+    100% { opacity: 1; }
+
+}
+@keyframes fadingin2{
+    0% { opacity: 0; right:110px;}
+    100% { opacity: 1; }
+
 }
 
 
@@ -255,3 +305,4 @@ p{ font-family: 'Trebuchet Ms';}
     top: 300px;
     line-height: 3; /* sapcing between lines */
 }
+
